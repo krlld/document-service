@@ -19,7 +19,7 @@ public class DocumentController {
     public final LimingDocumentService limingDocumentService;
 
     @GetMapping(value = "/liming-document", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
-    public Resource createLimingDocument(@Valid @RequestBody(required = false) LimingRequestDto limingRequestDto) {
+    public Resource createLimingDocument(@Valid @RequestBody LimingRequestDto limingRequestDto) {
         return limingDocumentService.createDocument(limingRequestDto);
     }
 }
