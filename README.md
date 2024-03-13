@@ -6,7 +6,7 @@
 
 #### or <br>
 
-### Use docker <br>
+### Use docker-compose <br>
 
 - git clone https://github.com/krlld/document-service
 - cd document-service
